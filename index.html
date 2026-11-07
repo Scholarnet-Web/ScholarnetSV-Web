@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScholarNet — Your dreams will be reality!</title>
+  <meta name="description" content="ScholarNet: complete, up-to-date and reliable information about national and international scholarships. No account needed.">
+  <meta name="theme-color" content="#0F7683">
+  <link rel="icon" type="image/png" href="assets/logos/logo-recortado.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-bg="light">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#/" aria-label="ScholarNet — home">
+        <img src="assets/logos/logo-recortado.png" alt="ScholarNet" width="233" height="114">
+      </a>
+
+      <button class="menu-toggle" type="button" id="menu-toggle"
+              aria-expanded="false" aria-controls="site-nav">
+        <img src="assets/icons/menu.png" alt="" width="24" height="24">
+        <span class="menu-toggle__label">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-open="false">
+        <div class="site-nav__head">
+          <span class="site-nav__title">ScholarNet</span>
+          <button class="site-nav__close" type="button" id="menu-close" aria-label="Close menu">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <ul class="site-nav__list">
+          <li><a href="#/" data-route="home">Home</a></li>
+          <li><a href="#/national" data-route="national">National</a></li>
+          <li><a href="#/international" data-route="international">International</a></li>
+          <li><a href="#/experiences" data-route="experiences">Experiences</a></li>
+          <li><a href="#/news" data-route="news">News</a></li>
+          <li><a href="#/about" data-route="about">About us</a></li>
+          <li><a href="#/contact" data-route="contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop" hidden></div>
+
+  <main id="main" tabindex="-1">
+    <noscript>
+      <p class="noscript">ScholarNet needs JavaScript enabled to show the scholarship listings. Please turn it on in your browser and reload the page.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__brand"><strong>ScholarNet</strong> · Your dreams will be reality!</p>
+      <ul class="site-footer__links">
+        <li><a href="#/national">National</a></li>
+        <li><a href="#/international">International</a></li>
+        <li><a href="#/experiences">Experiences</a></li>
+        <li><a href="#/news">News</a></li>
+        <li><a href="#/about">About us</a></li>
+        <li><a href="#/contact">Contact us</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Anuncia el cambio de pantalla a lectores de pantalla -->
+  <div class="visually-hidden" id="route-status" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
